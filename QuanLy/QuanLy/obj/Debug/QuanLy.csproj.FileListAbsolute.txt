@@ -1,2 +1,3 @@
 F:\ky 6\thuctapnhom\QuanLyKhoHang\QuanLy\QuanLy\bin\Debug\QuanLy.exe.config
 F:\ky 6\thuctapnhom\VanAnh\QuanLy\QuanLy\bin\Debug\QuanLy.exe.config
+C:\Users\Vuong Le\Desktop\CLONE\QLKho\VanAnh\QuanLy\QuanLy\bin\Debug\QuanLy.exe.config

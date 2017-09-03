@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormLogIn
     {
@@ -79,7 +79,7 @@
             this.BtLog.TabIndex = 18;
             this.BtLog.Text = "Log In";
             this.BtLog.UseVisualStyleBackColor = true;
-           // this.BtLog.Click += new System.EventHandler(this.BtLog_Click);
+            this.BtLog.Click += new System.EventHandler(this.BtLog_Click);
             // 
             // FormLogIn
             // 
@@ -106,6 +106,5 @@
         private System.Windows.Forms.TextBox TxtLogName;
         private System.Windows.Forms.TextBox TxtLogPass;
         private System.Windows.Forms.Button BtLog;
-
     }
 }
