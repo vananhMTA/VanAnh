@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormRegistration
     {
@@ -146,7 +146,7 @@
             this.TxtResName.Name = "TxtResName";
             this.TxtResName.Size = new System.Drawing.Size(48, 22);
             this.TxtResName.TabIndex = 19;
-         //   this.TxtResName.TextChanged += new System.EventHandler(this.TxtResName_TextChanged);
+            this.TxtResName.TextChanged += new System.EventHandler(this.TxtResName_TextChanged);
             // 
             // label5
             // 
@@ -175,7 +175,7 @@
             this.BtnRes.TabIndex = 1;
             this.BtnRes.Text = "Register";
             this.BtnRes.UseVisualStyleBackColor = true;
-          //  this.BtnRes.Click += new System.EventHandler(this.BtnRes_Click);
+            this.BtnRes.Click += new System.EventHandler(this.BtnRes_Click);
             // 
             // FormRegistration
             // 
@@ -209,6 +209,5 @@
         private System.Windows.Forms.TextBox TxtResUser;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnRes;
-
     }
 }
