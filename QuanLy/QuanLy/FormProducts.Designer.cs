@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormProducts
     {
@@ -30,6 +30,7 @@
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TxtProSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.BtProSearch = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtProUnit = new System.Windows.Forms.TextBox();
             this.BtProCreateSup = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.BtProBack = new System.Windows.Forms.ToolStripButton();
             this.BtProFresh = new System.Windows.Forms.ToolStripButton();
             this.CmbPro = new System.Windows.Forms.ComboBox();
-            this.BtProSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,6 +81,17 @@
             this.TxtProSearch.Name = "TxtProSearch";
             this.TxtProSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtProSearch.Text = "Fill information";
+            this.TxtProSearch.Click += new System.EventHandler(this.TxtProSearch_Click);
+            // 
+            // BtProSearch
+            // 
+            this.BtProSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtProSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtProSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtProSearch.Name = "BtProSearch";
+            this.BtProSearch.Size = new System.Drawing.Size(62, 22);
+            this.BtProSearch.Text = "Search";
+            this.BtProSearch.Click += new System.EventHandler(this.BtProSearch_Click);
             // 
             // groupBox1
             // 
@@ -114,12 +125,13 @@
             // BtProCreateSup
             // 
             this.BtProCreateSup.Enabled = false;
-            this.BtProCreateSup.Image = global::QuanLy.Properties.Resources.them;
+            this.BtProCreateSup.Image = global::InventoryManage.Properties.Resources.them;
             this.BtProCreateSup.Location = new System.Drawing.Point(526, 52);
             this.BtProCreateSup.Name = "BtProCreateSup";
             this.BtProCreateSup.Size = new System.Drawing.Size(27, 24);
             this.BtProCreateSup.TabIndex = 11;
             this.BtProCreateSup.UseVisualStyleBackColor = true;
+            this.BtProCreateSup.Click += new System.EventHandler(this.BtProCreateSup_Click);
             // 
             // CbProSupplier
             // 
@@ -217,6 +229,7 @@
             this.DgvPro.Name = "DgvPro";
             this.DgvPro.Size = new System.Drawing.Size(528, 213);
             this.DgvPro.TabIndex = 0;
+            this.DgvPro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPro_CellClick);
             // 
             // groupBox3
             // 
@@ -246,53 +259,58 @@
             // BtProCreate
             // 
             this.BtProCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtProCreate.Image = global::QuanLy.Properties.Resources.Add;
+            this.BtProCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtProCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProCreate.Margin = new System.Windows.Forms.Padding(40, 1, 0, 2);
             this.BtProCreate.Name = "BtProCreate";
             this.BtProCreate.Size = new System.Drawing.Size(66, 22);
             this.BtProCreate.Text = "Create";
             this.BtProCreate.Visible = false;
+            this.BtProCreate.Click += new System.EventHandler(this.BtProCreate_Click);
             // 
             // BtProEdit
             // 
             this.BtProEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtProEdit.Image = global::QuanLy.Properties.Resources.Edit;
+            this.BtProEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtProEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProEdit.Name = "BtProEdit";
             this.BtProEdit.Size = new System.Drawing.Size(50, 22);
             this.BtProEdit.Text = "Edit";
             this.BtProEdit.Visible = false;
+            this.BtProEdit.Click += new System.EventHandler(this.BtProEdit_Click);
             // 
             // BtProDelete
             // 
-            this.BtProDelete.Image = global::QuanLy.Properties.Resources.delete;
+            this.BtProDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtProDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProDelete.Name = "BtProDelete";
             this.BtProDelete.Size = new System.Drawing.Size(60, 22);
             this.BtProDelete.Text = "Delete";
             this.BtProDelete.Visible = false;
+            this.BtProDelete.Click += new System.EventHandler(this.BtProDelete_Click);
             // 
             // BtProBack
             // 
-            this.BtProBack.Image = global::QuanLy.Properties.Resources.Previous;
+            this.BtProBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtProBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProBack.Name = "BtProBack";
             this.BtProBack.Size = new System.Drawing.Size(52, 22);
             this.BtProBack.Text = "Back";
+            this.BtProBack.Click += new System.EventHandler(this.BtProBack_Click);
             // 
             // BtProFresh
             // 
-            this.BtProFresh.Image = global::QuanLy.Properties.Resources.repeat_128;
+            this.BtProFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtProFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProFresh.Name = "BtProFresh";
             this.BtProFresh.Size = new System.Drawing.Size(55, 22);
             this.BtProFresh.Text = "Fresh";
             this.BtProFresh.Visible = false;
+            this.BtProFresh.Click += new System.EventHandler(this.BtProFresh_Click);
             // 
             // CmbPro
             // 
@@ -307,15 +325,6 @@
             this.CmbPro.Size = new System.Drawing.Size(121, 21);
             this.CmbPro.TabIndex = 3;
             // 
-            // BtProSearch
-            // 
-            this.BtProSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtProSearch.Image = global::QuanLy.Properties.Resources.search;
-            this.BtProSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtProSearch.Name = "BtProSearch";
-            this.BtProSearch.Size = new System.Drawing.Size(62, 22);
-            this.BtProSearch.Text = "Search";
-            // 
             // FormProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,6 +338,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormProducts";
             this.Text = "Products";
+            this.Load += new System.EventHandler(this.FormProducts_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -371,6 +381,6 @@
         private System.Windows.Forms.ToolStripButton BtProBack;
         private System.Windows.Forms.ToolStripButton BtProFresh;
         private System.Windows.Forms.ComboBox CmbPro;
-
     }
 }
+
