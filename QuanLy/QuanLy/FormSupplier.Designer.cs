@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormSupplier
     {
@@ -86,58 +86,58 @@
             // BtSupCreate
             // 
             this.BtSupCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-         //   this.BtSupCreate.Image = global::InventoryManage.Properties.Resources.Add;
+            this.BtSupCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtSupCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
             this.BtSupCreate.Name = "BtSupCreate";
             this.BtSupCreate.Size = new System.Drawing.Size(66, 22);
             this.BtSupCreate.Text = "Create";
             this.BtSupCreate.Visible = false;
-         //   this.BtSupCreate.Click += new System.EventHandler(this.BtSupCreate_Click);
+            this.BtSupCreate.Click += new System.EventHandler(this.BtSupCreate_Click);
             // 
             // BtSupEdit
             // 
             this.BtSupEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-          //  this.BtSupEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+            this.BtSupEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtSupEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupEdit.Name = "BtSupEdit";
             this.BtSupEdit.Size = new System.Drawing.Size(50, 22);
             this.BtSupEdit.Text = "Edit";
             this.BtSupEdit.Visible = false;
-           // this.BtSupEdit.Click += new System.EventHandler(this.BtSupEdit_Click);
+            this.BtSupEdit.Click += new System.EventHandler(this.BtSupEdit_Click);
             // 
             // BtSupDelete
             // 
-           // this.BtSupDelete.Image = global::InventoryManage.Properties.Resources.delete;
+            this.BtSupDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtSupDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupDelete.Name = "BtSupDelete";
             this.BtSupDelete.Size = new System.Drawing.Size(60, 22);
             this.BtSupDelete.Text = "Delete";
             this.BtSupDelete.Visible = false;
-          //  this.BtSupDelete.Click += new System.EventHandler(this.BtSupDelete_Click);
+            this.BtSupDelete.Click += new System.EventHandler(this.BtSupDelete_Click);
             // 
             // BtSupBack
             // 
-          //  this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
+            this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtSupBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupBack.Name = "BtSupBack";
             this.BtSupBack.Size = new System.Drawing.Size(52, 22);
             this.BtSupBack.Text = "Back";
-          //  this.BtSupBack.Click += new System.EventHandler(this.BtSupBack_Click);
+            this.BtSupBack.Click += new System.EventHandler(this.BtSupBack_Click);
             // 
             // BtSupFresh
             // 
-          //  this.BtSupFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+            this.BtSupFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtSupFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupFresh.Name = "BtSupFresh";
             this.BtSupFresh.Size = new System.Drawing.Size(55, 22);
             this.BtSupFresh.Text = "Fresh";
             this.BtSupFresh.Visible = false;
-         //   this.BtSupFresh.Click += new System.EventHandler(this.BtSupFresh_Click);
+            this.BtSupFresh.Click += new System.EventHandler(this.BtSupFresh_Click);
             // 
             // groupBox2
             // 
@@ -157,7 +157,7 @@
             this.DgvSup.Name = "DgvSup";
             this.DgvSup.Size = new System.Drawing.Size(509, 180);
             this.DgvSup.TabIndex = 0;
-     //       this.DgvSup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSup_CellClick);
+            this.DgvSup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSup_CellClick);
             // 
             // groupBox1
             // 
@@ -256,7 +256,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(582, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
-         //   this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // TxtSupSearch
             // 
@@ -266,17 +266,17 @@
             this.TxtSupSearch.Name = "TxtSupSearch";
             this.TxtSupSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtSupSearch.Text = "Fill information";
-         //   this.TxtSupSearch.Click += new System.EventHandler(this.TxtSupSearch_Click);
+            this.TxtSupSearch.Click += new System.EventHandler(this.TxtSupSearch_Click);
             // 
             // BtSupSearch
             // 
             this.BtSupSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-         //   this.BtSupSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtSupSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtSupSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupSearch.Name = "BtSupSearch";
             this.BtSupSearch.Size = new System.Drawing.Size(62, 22);
             this.BtSupSearch.Text = "Search";
-       //     this.BtSupSearch.Click += new System.EventHandler(this.BtSupSearch_Click);
+            this.BtSupSearch.Click += new System.EventHandler(this.BtSupSearch_Click);
             // 
             // CmbSup
             // 
@@ -303,7 +303,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormSupplier";
             this.Text = "Suppliers";
-          //  this.Load += new System.EventHandler(this.FormSupplier_Load);
+            this.Load += new System.EventHandler(this.FormSupplier_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
@@ -343,6 +343,5 @@
         private System.Windows.Forms.ToolStripButton BtSupBack;
         private System.Windows.Forms.ToolStripButton BtSupFresh;
         private System.Windows.Forms.ComboBox CmbSup;
-
     }
 }
