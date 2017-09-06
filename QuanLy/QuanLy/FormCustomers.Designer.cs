@@ -1,6 +1,6 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
-    partial class FormCustomers
+    partial class FormSuppliers
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TxtCusSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.BtCusSearch = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtCusEmail = new System.Windows.Forms.TextBox();
             this.TxtCusPhone = new System.Windows.Forms.TextBox();
@@ -43,13 +44,12 @@
             this.DgvCus = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.BtCusSave = new System.Windows.Forms.ToolStripButton();
-            this.CmbCus = new System.Windows.Forms.ComboBox();
             this.BtCusCreate = new System.Windows.Forms.ToolStripButton();
             this.BtCusEdit = new System.Windows.Forms.ToolStripButton();
             this.BtCusDelete = new System.Windows.Forms.ToolStripButton();
             this.BtCusBack = new System.Windows.Forms.ToolStripButton();
-            this.BtCusSearch = new System.Windows.Forms.ToolStripButton();
+            this.BtCusSave = new System.Windows.Forms.ToolStripButton();
+            this.CmbCus = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,17 @@
             this.TxtCusSearch.Name = "TxtCusSearch";
             this.TxtCusSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtCusSearch.Text = "Fill information";
+            this.TxtCusSearch.Click += new System.EventHandler(this.TxtCusSearch_Click);
+            // 
+            // BtCusSearch
+            // 
+            this.BtCusSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtCusSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtCusSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtCusSearch.Name = "BtCusSearch";
+            this.BtCusSearch.Size = new System.Drawing.Size(62, 22);
+            this.BtCusSearch.Text = "Search";
+            this.BtCusSearch.Click += new System.EventHandler(this.BtCusSearch_Click);
             // 
             // groupBox1
             // 
@@ -183,6 +194,7 @@
             this.DgvCus.Name = "DgvCus";
             this.DgvCus.Size = new System.Drawing.Size(528, 199);
             this.DgvCus.TabIndex = 0;
+            this.DgvCus.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCus_CellClick);
             // 
             // groupBox3
             // 
@@ -209,15 +221,61 @@
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
             // 
+            // BtCusCreate
+            // 
+            this.BtCusCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.BtCusCreate.Image = global::InventoryManage.Properties.Resources.Add;
+            this.BtCusCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtCusCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
+            this.BtCusCreate.Name = "BtCusCreate";
+            this.BtCusCreate.Size = new System.Drawing.Size(66, 22);
+            this.BtCusCreate.Text = "Create";
+            this.BtCusCreate.Visible = false;
+            this.BtCusCreate.Click += new System.EventHandler(this.BtCusCreate_Click);
+            // 
+            // BtCusEdit
+            // 
+            this.BtCusEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.BtCusEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+            this.BtCusEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtCusEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
+            this.BtCusEdit.Name = "BtCusEdit";
+            this.BtCusEdit.Size = new System.Drawing.Size(50, 22);
+            this.BtCusEdit.Text = "Edit";
+            this.BtCusEdit.Visible = false;
+            this.BtCusEdit.Click += new System.EventHandler(this.BtCusEdit_Click);
+            // 
+            // BtCusDelete
+            // 
+            this.BtCusDelete.Image = global::InventoryManage.Properties.Resources.delete;
+            this.BtCusDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtCusDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
+            this.BtCusDelete.Name = "BtCusDelete";
+            this.BtCusDelete.Size = new System.Drawing.Size(60, 22);
+            this.BtCusDelete.Text = "Delete";
+            this.BtCusDelete.Visible = false;
+            this.BtCusDelete.Click += new System.EventHandler(this.BtCusDelete_Click);
+            // 
+            // BtCusBack
+            // 
+            this.BtCusBack.Image = global::InventoryManage.Properties.Resources.Previous;
+            this.BtCusBack.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtCusBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
+            this.BtCusBack.Name = "BtCusBack";
+            this.BtCusBack.Size = new System.Drawing.Size(52, 22);
+            this.BtCusBack.Text = "Back";
+            this.BtCusBack.Click += new System.EventHandler(this.BtCusBack_Click);
+            // 
             // BtCusSave
             // 
-            this.BtCusSave.Image = global::QuanLy.Properties.Resources.repeat_128;
+            this.BtCusSave.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtCusSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusSave.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtCusSave.Name = "BtCusSave";
             this.BtCusSave.Size = new System.Drawing.Size(55, 22);
             this.BtCusSave.Text = "Fresh";
             this.BtCusSave.Visible = false;
+            this.BtCusSave.Click += new System.EventHandler(this.BtCusSave_Click);
             // 
             // CmbCus
             // 
@@ -231,57 +289,7 @@
             this.CmbCus.Size = new System.Drawing.Size(121, 21);
             this.CmbCus.TabIndex = 9;
             // 
-            // BtCusCreate
-            // 
-            this.BtCusCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtCusCreate.Image = global::QuanLy.Properties.Resources.Add;
-            this.BtCusCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtCusCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
-            this.BtCusCreate.Name = "BtCusCreate";
-            this.BtCusCreate.Size = new System.Drawing.Size(66, 22);
-            this.BtCusCreate.Text = "Create";
-            this.BtCusCreate.Visible = false;
-            // 
-            // BtCusEdit
-            // 
-            this.BtCusEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtCusEdit.Image = global::QuanLy.Properties.Resources.Edit;
-            this.BtCusEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtCusEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
-            this.BtCusEdit.Name = "BtCusEdit";
-            this.BtCusEdit.Size = new System.Drawing.Size(50, 22);
-            this.BtCusEdit.Text = "Edit";
-            this.BtCusEdit.Visible = false;
-            // 
-            // BtCusDelete
-            // 
-            this.BtCusDelete.Image = global::QuanLy.Properties.Resources.delete;
-            this.BtCusDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtCusDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
-            this.BtCusDelete.Name = "BtCusDelete";
-            this.BtCusDelete.Size = new System.Drawing.Size(60, 22);
-            this.BtCusDelete.Text = "Delete";
-            this.BtCusDelete.Visible = false;
-            // 
-            // BtCusBack
-            // 
-            this.BtCusBack.Image = global::QuanLy.Properties.Resources.Previous;
-            this.BtCusBack.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtCusBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
-            this.BtCusBack.Name = "BtCusBack";
-            this.BtCusBack.Size = new System.Drawing.Size(52, 22);
-            this.BtCusBack.Text = "Back";
-            // 
-            // BtCusSearch
-            // 
-            this.BtCusSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtCusSearch.Image = global::QuanLy.Properties.Resources.search;
-            this.BtCusSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtCusSearch.Name = "BtCusSearch";
-            this.BtCusSearch.Size = new System.Drawing.Size(62, 22);
-            this.BtCusSearch.Text = "Search";
-            // 
-            // FormCustomers
+            // FormSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -292,8 +300,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "FormCustomers";
+            this.Name = "FormSuppliers";
             this.Text = "FormCustomers";
+            this.Load += new System.EventHandler(this.FormCustomers_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -333,7 +342,5 @@
         private System.Windows.Forms.ToolStripButton BtCusBack;
         private System.Windows.Forms.ToolStripButton BtCusSave;
         private System.Windows.Forms.ComboBox CmbCus;
-
     }
 }
-
