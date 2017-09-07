@@ -1,7 +1,8 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormStorekeepers
     {
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -29,6 +30,7 @@
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TxtStoSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.BtStoSearch = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BirthDay = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,7 +52,6 @@
             this.BtSupBack = new System.Windows.Forms.ToolStripButton();
             this.BtStoFresh = new System.Windows.Forms.ToolStripButton();
             this.CmbSto = new System.Windows.Forms.ComboBox();
-            this.BtStoSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,6 +81,17 @@
             this.TxtStoSearch.Name = "TxtStoSearch";
             this.TxtStoSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtStoSearch.Text = "Fill information";
+            this.TxtStoSearch.Click += new System.EventHandler(this.TxtStoSearch_Click);
+            // 
+            // BtStoSearch
+            // 
+            this.BtStoSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtStoSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtStoSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtStoSearch.Name = "BtStoSearch";
+            this.BtStoSearch.Size = new System.Drawing.Size(62, 22);
+            this.BtStoSearch.Text = "Search";
+            this.BtStoSearch.Click += new System.EventHandler(this.BtStoSearch_Click);
             // 
             // groupBox1
             // 
@@ -206,6 +218,7 @@
             this.DgvSto.Name = "DgvSto";
             this.DgvSto.Size = new System.Drawing.Size(532, 204);
             this.DgvSto.TabIndex = 0;
+            this.DgvSto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSto_CellClick);
             // 
             // groupBox3
             // 
@@ -235,53 +248,58 @@
             // BtStoCreate
             // 
             this.BtStoCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtStoCreate.Image = global::QuanLy.Properties.Resources.Add;
+            this.BtStoCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtStoCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
             this.BtStoCreate.Name = "BtStoCreate";
             this.BtStoCreate.Size = new System.Drawing.Size(66, 22);
             this.BtStoCreate.Text = "Create";
             this.BtStoCreate.Visible = false;
+            this.BtStoCreate.Click += new System.EventHandler(this.BtStoCreate_Click);
             // 
             // BtStoEdit
             // 
             this.BtStoEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtStoEdit.Image = global::QuanLy.Properties.Resources.Edit;
+            this.BtStoEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtStoEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoEdit.Name = "BtStoEdit";
             this.BtStoEdit.Size = new System.Drawing.Size(50, 22);
             this.BtStoEdit.Text = "Edit";
             this.BtStoEdit.Visible = false;
+            this.BtStoEdit.Click += new System.EventHandler(this.BtStoEdit_Click);
             // 
             // BtStoDelete
             // 
-            this.BtStoDelete.Image = global::QuanLy.Properties.Resources.delete;
+            this.BtStoDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtStoDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoDelete.Name = "BtStoDelete";
             this.BtStoDelete.Size = new System.Drawing.Size(60, 22);
             this.BtStoDelete.Text = "Delete";
             this.BtStoDelete.Visible = false;
+            this.BtStoDelete.Click += new System.EventHandler(this.BtStoDelete_Click);
             // 
             // BtSupBack
             // 
-            this.BtSupBack.Image = global::QuanLy.Properties.Resources.Previous;
+            this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtSupBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupBack.Name = "BtSupBack";
             this.BtSupBack.Size = new System.Drawing.Size(52, 22);
             this.BtSupBack.Text = "Back";
+            this.BtSupBack.Click += new System.EventHandler(this.BtSupBack_Click);
             // 
             // BtStoFresh
             // 
-            this.BtStoFresh.Image = global::QuanLy.Properties.Resources.repeat_128;
+            this.BtStoFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtStoFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoFresh.Name = "BtStoFresh";
             this.BtStoFresh.Size = new System.Drawing.Size(55, 22);
             this.BtStoFresh.Text = "Fresh";
             this.BtStoFresh.Visible = false;
+            this.BtStoFresh.Click += new System.EventHandler(this.BtStoFresh_Click);
             // 
             // CmbSto
             // 
@@ -293,15 +311,6 @@
             this.CmbSto.Name = "CmbSto";
             this.CmbSto.Size = new System.Drawing.Size(121, 21);
             this.CmbSto.TabIndex = 10;
-            // 
-            // BtStoSearch
-            // 
-            this.BtStoSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtStoSearch.Image = global::QuanLy.Properties.Resources.search;
-            this.BtStoSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtStoSearch.Name = "BtStoSearch";
-            this.BtStoSearch.Size = new System.Drawing.Size(62, 22);
-            this.BtStoSearch.Text = "Search";
             // 
             // FormStorekeepers
             // 
@@ -316,6 +325,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormStorekeepers";
             this.Text = "Storekeepers";
+            this.Load += new System.EventHandler(this.FormStorekeepers_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -356,6 +366,5 @@
         private System.Windows.Forms.ToolStripButton BtSupBack;
         private System.Windows.Forms.ToolStripButton BtStoFresh;
         private System.Windows.Forms.ComboBox CmbSto;
-
     }
 }
