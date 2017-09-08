@@ -1,4 +1,4 @@
-﻿using InventoryManage.Models.Entity;
+﻿using QuanLy.Models.Entity;
 using QuanLy.Models.Entity;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InventoryManage
+namespace QuanLy
 {
     public partial class FormRegistration : Form
     {

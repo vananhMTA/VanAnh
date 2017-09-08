@@ -1,4 +1,4 @@
-﻿namespace InventoryManage
+﻿namespace QuanLy
 {
     partial class FormHome
     {
@@ -213,7 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BackgroundImage = global::InventoryManage.Properties.Resources.sai_lam_khi_quan_ly_kho_hang1_1024x674;
+           // this.BackgroundImage = global::InventoryManage.Properties.Resources.sai_lam_khi_quan_ly_kho_hang1_1024x674;
             this.ClientSize = new System.Drawing.Size(483, 305);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);

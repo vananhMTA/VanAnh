@@ -1,4 +1,4 @@
-﻿namespace InventoryManage
+﻿namespace QuanLy
 {
     partial class FormProducts
     {

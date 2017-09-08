@@ -1,6 +1,4 @@
-﻿using InventoryManage.Models.Entity;
-using QuanLy;
-using QuanLy.Models.Entity;
+﻿using QuanLy.Models.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InventoryManage
+namespace QuanLy
 {
     
     public partial class FormLogIn : Form

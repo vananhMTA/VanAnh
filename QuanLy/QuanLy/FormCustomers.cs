@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InventoryManage
+namespace QuanLy
 {
     public partial class FormSuppliers : Form
     {
