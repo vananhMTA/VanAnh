@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormImportations
     {
@@ -46,10 +46,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.TxtImpStoID = new System.Windows.Forms.TextBox();
+            this.BtImpCreateSup = new System.Windows.Forms.Button();
             this.DateImp = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtImpSearch = new System.Windows.Forms.ToolStripTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.BtImpSearch = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.BtImpDeletePro = new System.Windows.Forms.Button();
@@ -69,8 +71,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.CmbImp = new System.Windows.Forms.ComboBox();
-            this.BtImpCreateSup = new System.Windows.Forms.Button();
-            this.BtImpSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStrip2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvImp)).BeginInit();
@@ -100,53 +100,58 @@
             // BtImpCreate
             // 
             this.BtImpCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtImpCreate.Image = global::QuanLy.Properties.Resources.Add;
+            this.BtImpCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtImpCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpCreate.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpCreate.Name = "BtImpCreate";
             this.BtImpCreate.Size = new System.Drawing.Size(113, 22);
             this.BtImpCreate.Text = "Create Receipt";
             this.BtImpCreate.Visible = false;
+            this.BtImpCreate.Click += new System.EventHandler(this.BtImpCreate_Click);
             // 
             // BtImpEdit
             // 
             this.BtImpEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtImpEdit.Image = global::QuanLy.Properties.Resources.Edit;
+            this.BtImpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtImpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpEdit.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpEdit.Name = "BtImpEdit";
             this.BtImpEdit.Size = new System.Drawing.Size(97, 22);
             this.BtImpEdit.Text = "Edit Receipt";
             this.BtImpEdit.Visible = false;
+            this.BtImpEdit.Click += new System.EventHandler(this.BtImpEdit_Click);
             // 
             // BtImpDelete
             // 
-            this.BtImpDelete.Image = global::QuanLy.Properties.Resources.delete;
+            this.BtImpDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtImpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpDelete.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpDelete.Name = "BtImpDelete";
             this.BtImpDelete.Size = new System.Drawing.Size(102, 22);
             this.BtImpDelete.Text = "Delete Receipt";
             this.BtImpDelete.Visible = false;
+            this.BtImpDelete.Click += new System.EventHandler(this.BtImpDelete_Click);
             // 
             // BtImpBack
             // 
-            this.BtImpBack.Image = global::QuanLy.Properties.Resources.Previous;
+            this.BtImpBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtImpBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpBack.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpBack.Name = "BtImpBack";
             this.BtImpBack.Size = new System.Drawing.Size(52, 22);
             this.BtImpBack.Text = "Back";
+            this.BtImpBack.Click += new System.EventHandler(this.BtImpBack_Click);
             // 
             // BtImpFresh
             // 
-            this.BtImpFresh.Image = global::QuanLy.Properties.Resources.repeat_128;
+            this.BtImpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtImpFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpFresh.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpFresh.Name = "BtImpFresh";
             this.BtImpFresh.Size = new System.Drawing.Size(55, 22);
             this.BtImpFresh.Text = "Fresh";
             this.BtImpFresh.Visible = false;
+            this.BtImpFresh.Click += new System.EventHandler(this.BtImpFresh_Click);
             // 
             // groupBox3
             // 
@@ -191,6 +196,7 @@
             this.DgvImp.Name = "DgvImp";
             this.DgvImp.Size = new System.Drawing.Size(478, 240);
             this.DgvImp.TabIndex = 0;
+            this.DgvImp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvImp_CellClick);
             // 
             // groupBox2
             // 
@@ -267,6 +273,18 @@
             this.TxtImpStoID.Name = "TxtImpStoID";
             this.TxtImpStoID.Size = new System.Drawing.Size(41, 22);
             this.TxtImpStoID.TabIndex = 15;
+            this.TxtImpStoID.TextChanged += new System.EventHandler(this.TxtImpStoID_TextChanged);
+            // 
+            // BtImpCreateSup
+            // 
+            this.BtImpCreateSup.Enabled = false;
+            this.BtImpCreateSup.Image = global::InventoryManage.Properties.Resources.them;
+            this.BtImpCreateSup.Location = new System.Drawing.Point(181, 23);
+            this.BtImpCreateSup.Name = "BtImpCreateSup";
+            this.BtImpCreateSup.Size = new System.Drawing.Size(27, 24);
+            this.BtImpCreateSup.TabIndex = 12;
+            this.BtImpCreateSup.UseVisualStyleBackColor = true;
+            this.BtImpCreateSup.Click += new System.EventHandler(this.BtImpCreateSup_Click);
             // 
             // DateImp
             // 
@@ -295,6 +313,7 @@
             this.TxtImpSearch.Name = "TxtImpSearch";
             this.TxtImpSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtImpSearch.Text = "Fill information";
+            this.TxtImpSearch.Click += new System.EventHandler(this.TxtImpSearch_Click);
             // 
             // toolStrip1
             // 
@@ -307,6 +326,16 @@
             this.toolStrip1.Size = new System.Drawing.Size(944, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // BtImpSearch
+            // 
+            this.BtImpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtImpSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtImpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtImpSearch.Name = "BtImpSearch";
+            this.BtImpSearch.Size = new System.Drawing.Size(62, 22);
+            this.BtImpSearch.Text = "Search";
+            this.BtImpSearch.Click += new System.EventHandler(this.BtImpSearch_Click);
             // 
             // panel1
             // 
@@ -344,6 +373,7 @@
             this.BtImpDeletePro.Text = "Delete Product";
             this.BtImpDeletePro.UseVisualStyleBackColor = false;
             this.BtImpDeletePro.Visible = false;
+            this.BtImpDeletePro.Click += new System.EventHandler(this.BtImpDeletePro_Click);
             // 
             // BtImpEditPro
             // 
@@ -356,6 +386,7 @@
             this.BtImpEditPro.Text = "Edit Product";
             this.BtImpEditPro.UseVisualStyleBackColor = false;
             this.BtImpEditPro.Visible = false;
+            this.BtImpEditPro.Click += new System.EventHandler(this.BtImpEditPro_Click);
             // 
             // BtImpAddPro
             // 
@@ -368,6 +399,7 @@
             this.BtImpAddPro.Text = "Add Product";
             this.BtImpAddPro.UseVisualStyleBackColor = false;
             this.BtImpAddPro.Visible = false;
+            this.BtImpAddPro.Click += new System.EventHandler(this.BtImpAddPro_Click);
             // 
             // DgvImpPro
             // 
@@ -376,6 +408,7 @@
             this.DgvImpPro.Name = "DgvImpPro";
             this.DgvImpPro.Size = new System.Drawing.Size(358, 163);
             this.DgvImpPro.TabIndex = 1;
+            this.DgvImpPro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvImpPro_CellClick);
             // 
             // groupBox4
             // 
@@ -401,11 +434,13 @@
             // BtImpProCreate
             // 
             this.BtImpProCreate.Enabled = false;
+            this.BtImpProCreate.Image = global::InventoryManage.Properties.Resources.them;
             this.BtImpProCreate.Location = new System.Drawing.Point(109, 23);
             this.BtImpProCreate.Name = "BtImpProCreate";
             this.BtImpProCreate.Size = new System.Drawing.Size(27, 24);
             this.BtImpProCreate.TabIndex = 19;
             this.BtImpProCreate.UseVisualStyleBackColor = true;
+            this.BtImpProCreate.Click += new System.EventHandler(this.BtImpProCreate_Click);
             // 
             // TxtImpProUnit
             // 
@@ -474,6 +509,7 @@
             this.TxtImpProCode.Name = "TxtImpProCode";
             this.TxtImpProCode.Size = new System.Drawing.Size(49, 22);
             this.TxtImpProCode.TabIndex = 10;
+            this.TxtImpProCode.TextChanged += new System.EventHandler(this.TxtImpProCode_TextChanged);
             // 
             // label4
             // 
@@ -508,25 +544,6 @@
             this.CmbImp.Size = new System.Drawing.Size(121, 21);
             this.CmbImp.TabIndex = 8;
             // 
-            // BtImpCreateSup
-            // 
-            this.BtImpCreateSup.Enabled = false;
-            this.BtImpCreateSup.Image = global::QuanLy.Properties.Resources.them;
-            this.BtImpCreateSup.Location = new System.Drawing.Point(181, 23);
-            this.BtImpCreateSup.Name = "BtImpCreateSup";
-            this.BtImpCreateSup.Size = new System.Drawing.Size(27, 24);
-            this.BtImpCreateSup.TabIndex = 12;
-            this.BtImpCreateSup.UseVisualStyleBackColor = true;
-            // 
-            // BtImpSearch
-            // 
-            this.BtImpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtImpSearch.Image = global::QuanLy.Properties.Resources.search;
-            this.BtImpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtImpSearch.Name = "BtImpSearch";
-            this.BtImpSearch.Size = new System.Drawing.Size(62, 22);
-            this.BtImpSearch.Text = "Search";
-            // 
             // FormImportations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,6 +558,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormImportations";
             this.Text = "Importations";
+            this.Load += new System.EventHandler(this.FormImportations_Load);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -606,6 +624,5 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TxtImpStoID;
         private System.Windows.Forms.ComboBox CmbImp;
-
     }
 }
