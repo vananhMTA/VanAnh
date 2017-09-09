@@ -1,7 +1,8 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormExportation
     {
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -67,8 +68,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TxtExpSearch = new System.Windows.Forms.ToolStripTextBox();
-            this.CmbExp = new System.Windows.Forms.ComboBox();
             this.BtExpSearch = new System.Windows.Forms.ToolStripButton();
+            this.CmbExp = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvExpPro)).BeginInit();
@@ -105,6 +106,7 @@
             this.BtExpDeletePro.Text = "Delete Product";
             this.BtExpDeletePro.UseVisualStyleBackColor = false;
             this.BtExpDeletePro.Visible = false;
+            this.BtExpDeletePro.Click += new System.EventHandler(this.BtExpDeletePro_Click);
             // 
             // BtExpEditPro
             // 
@@ -116,6 +118,7 @@
             this.BtExpEditPro.Text = "Edit Product";
             this.BtExpEditPro.UseVisualStyleBackColor = false;
             this.BtExpEditPro.Visible = false;
+            this.BtExpEditPro.Click += new System.EventHandler(this.BtExpEditPro_Click);
             // 
             // BtExpAddPro
             // 
@@ -127,6 +130,7 @@
             this.BtExpAddPro.Text = "Add Product";
             this.BtExpAddPro.UseVisualStyleBackColor = false;
             this.BtExpAddPro.Visible = false;
+            this.BtExpAddPro.Click += new System.EventHandler(this.BtExpAddPro_Click);
             // 
             // groupBox5
             // 
@@ -146,6 +150,7 @@
             this.DgvExpPro.Name = "DgvExpPro";
             this.DgvExpPro.Size = new System.Drawing.Size(358, 171);
             this.DgvExpPro.TabIndex = 1;
+            this.DgvExpPro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvExpPro_CellClick);
             // 
             // groupBox4
             // 
@@ -234,6 +239,7 @@
             this.TxtExpProCode.Name = "TxtExpProCode";
             this.TxtExpProCode.Size = new System.Drawing.Size(101, 22);
             this.TxtExpProCode.TabIndex = 10;
+            this.TxtExpProCode.TextChanged += new System.EventHandler(this.TxtExpProCode_TextChanged);
             // 
             // label4
             // 
@@ -281,53 +287,58 @@
             // BtExpCreate
             // 
             this.BtExpCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtExpCreate.Image = global::QuanLy.Properties.Resources.Add;
+            this.BtExpCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtExpCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpCreate.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpCreate.Name = "BtExpCreate";
             this.BtExpCreate.Size = new System.Drawing.Size(113, 22);
             this.BtExpCreate.Text = "Create Receipt";
             this.BtExpCreate.Visible = false;
+            this.BtExpCreate.Click += new System.EventHandler(this.BtExpCreate_Click);
             // 
             // BtExpEdit
             // 
             this.BtExpEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtExpEdit.Image = global::QuanLy.Properties.Resources.Edit;
+            this.BtExpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtExpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpEdit.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpEdit.Name = "BtExpEdit";
             this.BtExpEdit.Size = new System.Drawing.Size(97, 22);
             this.BtExpEdit.Text = "Edit Receipt";
             this.BtExpEdit.Visible = false;
+            this.BtExpEdit.Click += new System.EventHandler(this.BtExpEdit_Click);
             // 
             // BtExpDelete
             // 
-            this.BtExpDelete.Image = global::QuanLy.Properties.Resources.delete;
+            this.BtExpDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtExpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpDelete.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpDelete.Name = "BtExpDelete";
             this.BtExpDelete.Size = new System.Drawing.Size(102, 22);
             this.BtExpDelete.Text = "Delete Receipt";
             this.BtExpDelete.Visible = false;
+            this.BtExpDelete.Click += new System.EventHandler(this.BtExpDelete_Click);
             // 
             // BtExpBack
             // 
-            this.BtExpBack.Image = global::QuanLy.Properties.Resources.Previous;
+            this.BtExpBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtExpBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpBack.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpBack.Name = "BtExpBack";
             this.BtExpBack.Size = new System.Drawing.Size(52, 22);
             this.BtExpBack.Text = "Back";
+            this.BtExpBack.Click += new System.EventHandler(this.BtExpBack_Click);
             // 
             // BtExpFresh
             // 
-            this.BtExpFresh.Image = global::QuanLy.Properties.Resources.repeat_128;
+            this.BtExpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtExpFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpFresh.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpFresh.Name = "BtExpFresh";
             this.BtExpFresh.Size = new System.Drawing.Size(55, 22);
             this.BtExpFresh.Text = "Fresh";
             this.BtExpFresh.Visible = false;
+            this.BtExpFresh.Click += new System.EventHandler(this.BtExpFresh_Click);
             // 
             // groupBox2
             // 
@@ -347,6 +358,7 @@
             this.DgvExp.Name = "DgvExp";
             this.DgvExp.Size = new System.Drawing.Size(479, 230);
             this.DgvExp.TabIndex = 0;
+            this.DgvExp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvExp_CellClick);
             // 
             // groupBox1
             // 
@@ -376,6 +388,7 @@
             this.TxtExpStoID.Name = "TxtExpStoID";
             this.TxtExpStoID.Size = new System.Drawing.Size(41, 22);
             this.TxtExpStoID.TabIndex = 14;
+            this.TxtExpStoID.TextChanged += new System.EventHandler(this.TxtExpStoID_TextChanged);
             // 
             // label10
             // 
@@ -389,11 +402,13 @@
             // BtExpCreateCust
             // 
             this.BtExpCreateCust.Enabled = false;
+            this.BtExpCreateCust.Image = global::InventoryManage.Properties.Resources.them;
             this.BtExpCreateCust.Location = new System.Drawing.Point(166, 24);
             this.BtExpCreateCust.Name = "BtExpCreateCust";
             this.BtExpCreateCust.Size = new System.Drawing.Size(27, 24);
             this.BtExpCreateCust.TabIndex = 12;
             this.BtExpCreateCust.UseVisualStyleBackColor = true;
+            this.BtExpCreateCust.Click += new System.EventHandler(this.BtExpCreateCust_Click);
             // 
             // DateExp
             // 
@@ -486,6 +501,17 @@
             this.TxtExpSearch.Name = "TxtExpSearch";
             this.TxtExpSearch.Size = new System.Drawing.Size(100, 25);
             this.TxtExpSearch.Text = "Fill information";
+            this.TxtExpSearch.Click += new System.EventHandler(this.TxtExpSearch_Click);
+            // 
+            // BtExpSearch
+            // 
+            this.BtExpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtExpSearch.Image = global::InventoryManage.Properties.Resources.search;
+            this.BtExpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtExpSearch.Name = "BtExpSearch";
+            this.BtExpSearch.Size = new System.Drawing.Size(62, 22);
+            this.BtExpSearch.Text = "Search";
+            this.BtExpSearch.Click += new System.EventHandler(this.BtExpSearch_Click);
             // 
             // CmbExp
             // 
@@ -502,15 +528,6 @@
             this.CmbExp.Size = new System.Drawing.Size(121, 21);
             this.CmbExp.TabIndex = 13;
             // 
-            // BtExpSearch
-            // 
-            this.BtExpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtExpSearch.Image = global::QuanLy.Properties.Resources.search;
-            this.BtExpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtExpSearch.Name = "BtExpSearch";
-            this.BtExpSearch.Size = new System.Drawing.Size(62, 22);
-            this.BtExpSearch.Text = "Search";
-            // 
             // FormExportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -525,6 +542,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormExportation";
             this.Text = "FormExportation";
+            this.Load += new System.EventHandler(this.FormExportation_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvExpPro)).EndInit();
@@ -589,6 +607,5 @@
         private System.Windows.Forms.TextBox TxtExpStoID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox CmbExp;
-
     }
 }
