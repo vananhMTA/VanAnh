@@ -100,7 +100,7 @@
             // BtImpCreate
             // 
             this.BtImpCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtImpCreate.Image = global::InventoryManage.Properties.Resources.Add;
+         //   this.BtImpCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtImpCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpCreate.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpCreate.Name = "BtImpCreate";
@@ -112,7 +112,7 @@
             // BtImpEdit
             // 
             this.BtImpEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtImpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+      //      this.BtImpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtImpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpEdit.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpEdit.Name = "BtImpEdit";
@@ -123,7 +123,7 @@
             // 
             // BtImpDelete
             // 
-            this.BtImpDelete.Image = global::InventoryManage.Properties.Resources.delete;
+         //   this.BtImpDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtImpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpDelete.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpDelete.Name = "BtImpDelete";
@@ -134,7 +134,7 @@
             // 
             // BtImpBack
             // 
-            this.BtImpBack.Image = global::InventoryManage.Properties.Resources.Previous;
+         //   this.BtImpBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtImpBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpBack.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpBack.Name = "BtImpBack";
@@ -144,7 +144,7 @@
             // 
             // BtImpFresh
             // 
-            this.BtImpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+         //   this.BtImpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtImpFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpFresh.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtImpFresh.Name = "BtImpFresh";
@@ -278,7 +278,7 @@
             // BtImpCreateSup
             // 
             this.BtImpCreateSup.Enabled = false;
-            this.BtImpCreateSup.Image = global::InventoryManage.Properties.Resources.them;
+        //    this.BtImpCreateSup.Image = global::InventoryManage.Properties.Resources.them;
             this.BtImpCreateSup.Location = new System.Drawing.Point(181, 23);
             this.BtImpCreateSup.Name = "BtImpCreateSup";
             this.BtImpCreateSup.Size = new System.Drawing.Size(27, 24);
@@ -330,7 +330,7 @@
             // BtImpSearch
             // 
             this.BtImpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtImpSearch.Image = global::InventoryManage.Properties.Resources.search;
+         //   this.BtImpSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtImpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtImpSearch.Name = "BtImpSearch";
             this.BtImpSearch.Size = new System.Drawing.Size(62, 22);
@@ -434,7 +434,7 @@
             // BtImpProCreate
             // 
             this.BtImpProCreate.Enabled = false;
-            this.BtImpProCreate.Image = global::InventoryManage.Properties.Resources.them;
+          //  this.BtImpProCreate.Image = global::InventoryManage.Properties.Resources.them;
             this.BtImpProCreate.Location = new System.Drawing.Point(109, 23);
             this.BtImpProCreate.Name = "BtImpProCreate";
             this.BtImpProCreate.Size = new System.Drawing.Size(27, 24);

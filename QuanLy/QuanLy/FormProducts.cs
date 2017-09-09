@@ -1,4 +1,6 @@
 ﻿using InventoryManage.Models.Entity;
+using QuanLy;
+using QuanLy.Models.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,7 +60,7 @@ namespace InventoryManage
         }
         public void LoadCbSup()
         {
-            var result = db.Companys.ToList();
+            var result = db.Companies.ToList();
             CbProSupplier.DataSource = result;
             CbProSupplier.ValueMember = "ID";
             CbProSupplier.DisplayMember = "Name";

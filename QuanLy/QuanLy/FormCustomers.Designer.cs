@@ -83,7 +83,7 @@
             // BtCusSearch
             // 
             this.BtCusSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtCusSearch.Image = global::InventoryManage.Properties.Resources.search;
+          //  this.BtCusSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtCusSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusSearch.Name = "BtCusSearch";
             this.BtCusSearch.Size = new System.Drawing.Size(62, 22);
@@ -224,7 +224,7 @@
             // BtCusCreate
             // 
             this.BtCusCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtCusCreate.Image = global::InventoryManage.Properties.Resources.Add;
+         //   this.BtCusCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtCusCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
             this.BtCusCreate.Name = "BtCusCreate";
@@ -236,7 +236,7 @@
             // BtCusEdit
             // 
             this.BtCusEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtCusEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+           // this.BtCusEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtCusEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtCusEdit.Name = "BtCusEdit";
@@ -247,7 +247,7 @@
             // 
             // BtCusDelete
             // 
-            this.BtCusDelete.Image = global::InventoryManage.Properties.Resources.delete;
+         //   this.BtCusDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtCusDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtCusDelete.Name = "BtCusDelete";
@@ -258,7 +258,7 @@
             // 
             // BtCusBack
             // 
-            this.BtCusBack.Image = global::InventoryManage.Properties.Resources.Previous;
+         //   this.BtCusBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtCusBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtCusBack.Name = "BtCusBack";
@@ -268,7 +268,7 @@
             // 
             // BtCusSave
             // 
-            this.BtCusSave.Image = global::InventoryManage.Properties.Resources.repeat_128;
+        //    this.BtCusSave.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtCusSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtCusSave.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtCusSave.Name = "BtCusSave";

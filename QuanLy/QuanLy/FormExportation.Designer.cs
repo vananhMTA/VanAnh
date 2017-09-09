@@ -287,7 +287,7 @@
             // BtExpCreate
             // 
             this.BtExpCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtExpCreate.Image = global::InventoryManage.Properties.Resources.Add;
+          //  this.BtExpCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtExpCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpCreate.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpCreate.Name = "BtExpCreate";
@@ -299,7 +299,7 @@
             // BtExpEdit
             // 
             this.BtExpEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtExpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+           // this.BtExpEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtExpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpEdit.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpEdit.Name = "BtExpEdit";
@@ -310,7 +310,7 @@
             // 
             // BtExpDelete
             // 
-            this.BtExpDelete.Image = global::InventoryManage.Properties.Resources.delete;
+         //   this.BtExpDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtExpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpDelete.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpDelete.Name = "BtExpDelete";
@@ -321,7 +321,7 @@
             // 
             // BtExpBack
             // 
-            this.BtExpBack.Image = global::InventoryManage.Properties.Resources.Previous;
+        //    this.BtExpBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtExpBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpBack.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpBack.Name = "BtExpBack";
@@ -331,7 +331,7 @@
             // 
             // BtExpFresh
             // 
-            this.BtExpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+          //  this.BtExpFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtExpFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpFresh.Margin = new System.Windows.Forms.Padding(70, 1, 0, 2);
             this.BtExpFresh.Name = "BtExpFresh";
@@ -402,7 +402,7 @@
             // BtExpCreateCust
             // 
             this.BtExpCreateCust.Enabled = false;
-            this.BtExpCreateCust.Image = global::InventoryManage.Properties.Resources.them;
+         //   this.BtExpCreateCust.Image = global::InventoryManage.Properties.Resources.them;
             this.BtExpCreateCust.Location = new System.Drawing.Point(166, 24);
             this.BtExpCreateCust.Name = "BtExpCreateCust";
             this.BtExpCreateCust.Size = new System.Drawing.Size(27, 24);
@@ -506,7 +506,7 @@
             // BtExpSearch
             // 
             this.BtExpSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtExpSearch.Image = global::InventoryManage.Properties.Resources.search;
+         //   this.BtExpSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtExpSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtExpSearch.Name = "BtExpSearch";
             this.BtExpSearch.Size = new System.Drawing.Size(62, 22);

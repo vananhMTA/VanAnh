@@ -86,7 +86,7 @@
             // BtStoSearch
             // 
             this.BtStoSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtStoSearch.Image = global::InventoryManage.Properties.Resources.search;
+         //   this.BtStoSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtStoSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoSearch.Name = "BtStoSearch";
             this.BtStoSearch.Size = new System.Drawing.Size(62, 22);
@@ -248,7 +248,7 @@
             // BtStoCreate
             // 
             this.BtStoCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtStoCreate.Image = global::InventoryManage.Properties.Resources.Add;
+          //  this.BtStoCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtStoCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
             this.BtStoCreate.Name = "BtStoCreate";
@@ -260,7 +260,7 @@
             // BtStoEdit
             // 
             this.BtStoEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtStoEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+         //   this.BtStoEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtStoEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoEdit.Name = "BtStoEdit";
@@ -271,7 +271,7 @@
             // 
             // BtStoDelete
             // 
-            this.BtStoDelete.Image = global::InventoryManage.Properties.Resources.delete;
+        //    this.BtStoDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtStoDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoDelete.Name = "BtStoDelete";
@@ -282,7 +282,7 @@
             // 
             // BtSupBack
             // 
-            this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
+         //   this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtSupBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupBack.Name = "BtSupBack";
@@ -292,7 +292,7 @@
             // 
             // BtStoFresh
             // 
-            this.BtStoFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+         //   this.BtStoFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtStoFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtStoFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtStoFresh.Name = "BtStoFresh";

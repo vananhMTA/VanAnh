@@ -1,4 +1,6 @@
 ﻿using InventoryManage.Models.Entity;
+using QuanLy;
+using QuanLy.Models.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +27,7 @@ namespace InventoryManage
         MyContext db = new MyContext();
         public void LoadDgv()
         {
-            var result = from c in db.Companys
+            var result = from c in db.Companies
                          select new
                          {
                              ID = c.ID,
@@ -91,7 +93,7 @@ namespace InventoryManage
             if(CmbSup.Text == "ID of Supplier" || CmbSup.Text == "")
             {
                 var IdSearch = Convert.ToInt16(TxtSupSearch.Text);
-                var Supplier = db.Companys.Where(p => p.ID == IdSearch).SingleOrDefault();
+                var Supplier = db.Companies.Where(p => p.ID == IdSearch).SingleOrDefault();
                 if (Supplier != null)
                 {
                     for (int i = 0; i < DgvSup.RowCount; i++)
@@ -112,7 +114,7 @@ namespace InventoryManage
             }
             else if(CmbSup.Text == "Name of Supplier")
             {
-                var result = from c in db.Companys where c.Name.Contains(TxtSupSearch.Text) select c;
+                var result = from c in db.Companies where c.Name.Contains(TxtSupSearch.Text) select c;
                 var Supplier = result.ToList();
                 if (Supplier.Count != 0)
                 {
@@ -128,7 +130,7 @@ namespace InventoryManage
             }
             else if(CmbSup.Text == "Address")
             {
-                var result = from c in db.Companys where c.Ad.Contains(TxtSupSearch.Text) select c;
+                var result = from c in db.Companies where c.Ad.Contains(TxtSupSearch.Text) select c;
                 var Supplier = result.ToList();
                 if (Supplier.Count != 0)
                 {
@@ -183,7 +185,7 @@ namespace InventoryManage
             Sup.Email = TxtSupEmail.Text;
             Sup.Name = TxtSupName.Text;
             Sup.PhoneNumber = TxtSupPhone.Text;
-            db.Companys.Add(Sup);
+            db.Companies.Add(Sup);
             db.SaveChanges();
             MessageBox.Show("Add item successfully");
             LoadDgv();
@@ -194,7 +196,7 @@ namespace InventoryManage
         {
             var Id = DgvSup.CurrentRow.Cells["ID"].Value.ToString();
             int IdSup = Convert.ToInt32(Id);
-            var result = db.Companys.Find(IdSup);
+            var result = db.Companies.Find(IdSup);
             if (TxtSupName.Text == "" || TxtSupPhone.Text == "" || TxtSupEmail.Text == "" || TxtSupAddress.Text == "")
             {
                 MessageBox.Show("Fill in all information");
@@ -217,10 +219,10 @@ namespace InventoryManage
         {
             var Id = DgvSup.CurrentRow.Cells["ID"].Value.ToString();
             int IdSup = Convert.ToInt32(Id);
-            var result = db.Companys.Find(IdSup);
+            var result = db.Companies.Find(IdSup);
             if (MessageBox.Show("Do you want to delete this item?", "", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                db.Companys.Remove(result);
+                db.Companies.Remove(result);
                 db.SaveChanges();
                 LoadDgv();
                 LoadDetail();

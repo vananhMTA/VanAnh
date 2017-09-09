@@ -86,7 +86,7 @@
             // BtProSearch
             // 
             this.BtProSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtProSearch.Image = global::InventoryManage.Properties.Resources.search;
+        //    this.BtProSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtProSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProSearch.Name = "BtProSearch";
             this.BtProSearch.Size = new System.Drawing.Size(62, 22);
@@ -125,7 +125,7 @@
             // BtProCreateSup
             // 
             this.BtProCreateSup.Enabled = false;
-            this.BtProCreateSup.Image = global::InventoryManage.Properties.Resources.them;
+         //   this.BtProCreateSup.Image = global::InventoryManage.Properties.Resources.them;
             this.BtProCreateSup.Location = new System.Drawing.Point(526, 52);
             this.BtProCreateSup.Name = "BtProCreateSup";
             this.BtProCreateSup.Size = new System.Drawing.Size(27, 24);
@@ -259,7 +259,7 @@
             // BtProCreate
             // 
             this.BtProCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtProCreate.Image = global::InventoryManage.Properties.Resources.Add;
+          //  this.BtProCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtProCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProCreate.Margin = new System.Windows.Forms.Padding(40, 1, 0, 2);
             this.BtProCreate.Name = "BtProCreate";
@@ -271,7 +271,7 @@
             // BtProEdit
             // 
             this.BtProEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtProEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+         //   this.BtProEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtProEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProEdit.Name = "BtProEdit";
@@ -282,7 +282,7 @@
             // 
             // BtProDelete
             // 
-            this.BtProDelete.Image = global::InventoryManage.Properties.Resources.delete;
+         //   this.BtProDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtProDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProDelete.Name = "BtProDelete";
@@ -293,7 +293,7 @@
             // 
             // BtProBack
             // 
-            this.BtProBack.Image = global::InventoryManage.Properties.Resources.Previous;
+         //   this.BtProBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtProBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProBack.Name = "BtProBack";
@@ -303,7 +303,7 @@
             // 
             // BtProFresh
             // 
-            this.BtProFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+       //     this.BtProFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtProFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtProFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtProFresh.Name = "BtProFresh";

@@ -1,4 +1,6 @@
 ﻿using InventoryManage.Models.Entity;
+using QuanLy;
+using QuanLy.Models.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

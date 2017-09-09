@@ -1,4 +1,4 @@
-﻿namespace QuanLy
+﻿namespace InventoryManage
 {
     partial class FormHome
     {
@@ -76,12 +76,14 @@
             this.SignIn.Name = "SignIn";
             this.SignIn.Size = new System.Drawing.Size(112, 22);
             this.SignIn.Text = "Sign In";
+            this.SignIn.Click += new System.EventHandler(this.SignIn_Click);
             // 
             // Registe
             // 
             this.Registe.Name = "Registe";
             this.Registe.Size = new System.Drawing.Size(112, 22);
             this.Registe.Text = "Registe";
+            this.Registe.Click += new System.EventHandler(this.Registe_Click);
             // 
             // View
             // 
@@ -101,36 +103,42 @@
             this.Products.Name = "Products";
             this.Products.Size = new System.Drawing.Size(142, 22);
             this.Products.Text = "Products";
+            this.Products.Click += new System.EventHandler(this.Products_Click);
             // 
             // Importations
             // 
             this.Importations.Name = "Importations";
             this.Importations.Size = new System.Drawing.Size(142, 22);
             this.Importations.Text = "Importations";
+            this.Importations.Click += new System.EventHandler(this.Importations_Click);
             // 
             // Exportations
             // 
             this.Exportations.Name = "Exportations";
             this.Exportations.Size = new System.Drawing.Size(142, 22);
             this.Exportations.Text = "Exportations";
+            this.Exportations.Click += new System.EventHandler(this.Exportations_Click);
             // 
             // Suppliers
             // 
             this.Suppliers.Name = "Suppliers";
             this.Suppliers.Size = new System.Drawing.Size(142, 22);
             this.Suppliers.Text = "Suppliers";
+            this.Suppliers.Click += new System.EventHandler(this.Suppliers_Click);
             // 
             // Customers
             // 
             this.Customers.Name = "Customers";
             this.Customers.Size = new System.Drawing.Size(142, 22);
             this.Customers.Text = "Customers";
+            this.Customers.Click += new System.EventHandler(this.Customers_Click);
             // 
             // Storekeepers
             // 
             this.Storekeepers.Name = "Storekeepers";
             this.Storekeepers.Size = new System.Drawing.Size(142, 22);
             this.Storekeepers.Text = "Storekeepers";
+            this.Storekeepers.Click += new System.EventHandler(this.Storekeepers_Click);
             // 
             // Manage
             // 
@@ -149,38 +157,44 @@
             // productsToolStripMenuItem1
             // 
             this.productsToolStripMenuItem1.Name = "productsToolStripMenuItem1";
-            this.productsToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.productsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.productsToolStripMenuItem1.Text = "Products";
+            this.productsToolStripMenuItem1.Click += new System.EventHandler(this.productsToolStripMenuItem1_Click);
             // 
             // importationsToolStripMenuItem1
             // 
             this.importationsToolStripMenuItem1.Name = "importationsToolStripMenuItem1";
-            this.importationsToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.importationsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.importationsToolStripMenuItem1.Text = "Importations";
+            this.importationsToolStripMenuItem1.Click += new System.EventHandler(this.importationsToolStripMenuItem1_Click);
             // 
             // exportationsToolStripMenuItem1
             // 
             this.exportationsToolStripMenuItem1.Name = "exportationsToolStripMenuItem1";
-            this.exportationsToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.exportationsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.exportationsToolStripMenuItem1.Text = "Exportations";
+            this.exportationsToolStripMenuItem1.Click += new System.EventHandler(this.exportationsToolStripMenuItem1_Click);
             // 
             // suppliersToolStripMenuItem1
             // 
             this.suppliersToolStripMenuItem1.Name = "suppliersToolStripMenuItem1";
-            this.suppliersToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.suppliersToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.suppliersToolStripMenuItem1.Text = "Suppliers";
+            this.suppliersToolStripMenuItem1.Click += new System.EventHandler(this.suppliersToolStripMenuItem1_Click);
             // 
             // customersToolStripMenuItem1
             // 
             this.customersToolStripMenuItem1.Name = "customersToolStripMenuItem1";
-            this.customersToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.customersToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.customersToolStripMenuItem1.Text = "Customers";
+            this.customersToolStripMenuItem1.Click += new System.EventHandler(this.customersToolStripMenuItem1_Click);
             // 
             // storekeepersToolStripMenuItem1
             // 
             this.storekeepersToolStripMenuItem1.Name = "storekeepersToolStripMenuItem1";
-            this.storekeepersToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.storekeepersToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.storekeepersToolStripMenuItem1.Text = "Storekeepers";
+            this.storekeepersToolStripMenuItem1.Click += new System.EventHandler(this.storekeepersToolStripMenuItem1_Click);
             // 
             // label1
             // 
@@ -199,7 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BackgroundImage = global::QuanLy.Properties.Resources.sai_lam_khi_quan_ly_kho_hang1_1024x674;
+            this.BackgroundImage = global::InventoryManage.Properties.Resources.sai_lam_khi_quan_ly_kho_hang1_1024x674;
             this.ClientSize = new System.Drawing.Size(483, 305);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -234,6 +248,5 @@
         private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem storekeepersToolStripMenuItem1;
         private System.Windows.Forms.Label label1;
-
     }
 }

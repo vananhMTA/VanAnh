@@ -86,7 +86,7 @@
             // BtSupCreate
             // 
             this.BtSupCreate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtSupCreate.Image = global::InventoryManage.Properties.Resources.Add;
+         //   this.BtSupCreate.Image = global::InventoryManage.Properties.Resources.Add;
             this.BtSupCreate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupCreate.Margin = new System.Windows.Forms.Padding(20, 1, 0, 2);
             this.BtSupCreate.Name = "BtSupCreate";
@@ -98,7 +98,7 @@
             // BtSupEdit
             // 
             this.BtSupEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.BtSupEdit.Image = global::InventoryManage.Properties.Resources.Edit;
+         //   this.BtSupEdit.Image = global::InventoryManage.Properties.Resources.Edit;
             this.BtSupEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupEdit.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupEdit.Name = "BtSupEdit";
@@ -109,7 +109,7 @@
             // 
             // BtSupDelete
             // 
-            this.BtSupDelete.Image = global::InventoryManage.Properties.Resources.delete;
+         //   this.BtSupDelete.Image = global::InventoryManage.Properties.Resources.delete;
             this.BtSupDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupDelete.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupDelete.Name = "BtSupDelete";
@@ -120,7 +120,7 @@
             // 
             // BtSupBack
             // 
-            this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
+       //     this.BtSupBack.Image = global::InventoryManage.Properties.Resources.Previous;
             this.BtSupBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupBack.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupBack.Name = "BtSupBack";
@@ -130,7 +130,7 @@
             // 
             // BtSupFresh
             // 
-            this.BtSupFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
+       //     this.BtSupFresh.Image = global::InventoryManage.Properties.Resources.repeat_128;
             this.BtSupFresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupFresh.Margin = new System.Windows.Forms.Padding(50, 1, 0, 2);
             this.BtSupFresh.Name = "BtSupFresh";
@@ -271,7 +271,7 @@
             // BtSupSearch
             // 
             this.BtSupSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtSupSearch.Image = global::InventoryManage.Properties.Resources.search;
+        //    this.BtSupSearch.Image = global::InventoryManage.Properties.Resources.search;
             this.BtSupSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtSupSearch.Name = "BtSupSearch";
             this.BtSupSearch.Size = new System.Drawing.Size(62, 22);
